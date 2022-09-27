@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'scryfall'
+
+puts "Enter search"
+search = gets.chomp
+puts "Enter page"
+page = gets.chomp
+
+cards = Scryfall::Cards.search(search, page)
+puts "Here are the cards: #{cards}"
