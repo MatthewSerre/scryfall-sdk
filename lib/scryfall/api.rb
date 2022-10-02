@@ -6,8 +6,8 @@ class Scryfall::API
         @url = url
     end
 
-    def get(path = '', params = {}, **args)
-        uri = URI(@url + path)
+    def get(params = {})
+        uri = URI(@url + params["path"])
         uri.query = URI.encode_www_form(params) unless params.empty?
         res = Net::HTTP.get_response(uri)
         JSON.parse res.body if res.is_a?(Net::HTTPSuccess)
