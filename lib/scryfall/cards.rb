@@ -14,4 +14,8 @@ class Scryfall::Cards < Scryfall::Base
         params['set'] = set unless set.nil?
         api.get(params)
     end
+
+    def self.random
+        # stub
+    end
 end
