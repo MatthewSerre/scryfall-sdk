@@ -22,7 +22,7 @@ RSpec.describe Scryfall::Cards do
             # test goes here
             it "returns a JSON response containing the data for the specified card" do
                 VCR.use_cassette('successful exact named') do
-                    expect(Scryfall::Cards.named("nonexistent card", true)["name"]).to eq("Jace Beleren")
+                    expect(Scryfall::Cards.named("jace beleren", true)["name"]).to eq("Jace Beleren")
                 end
             end
         end
