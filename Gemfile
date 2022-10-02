@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'byebug'
-gem 'rspec'
-gem 'vcr'
-gem 'webmock'
+group :test, :development do
+    gem 'byebug'
+    gem 'rspec'
+    gem 'vcr'
+    gem 'webmock'
+end
