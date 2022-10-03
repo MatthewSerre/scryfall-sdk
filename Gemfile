@@ -1,8 +1,8 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 
-group :test, :development do
-    gem 'byebug'
-    gem 'rspec'
-    gem 'vcr'
-    gem 'webmock'
-end
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
+
+# Specify your gem's dependencies in scryfall.gemspec
+gemspec
