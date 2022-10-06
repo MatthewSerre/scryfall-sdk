@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 module Scryfall
+  # Contains the methods for initiating HTTP requests
   class API
     require 'json'
     require 'net/http'
@@ -10,7 +11,7 @@ module Scryfall
     end
 
     def get(params = {})
-      uri = URI(@url + params['path'])
+      uri = URI(@url + params[:path])
       uri.query = URI.encode_www_form(params) unless params.empty?
       res = Net::HTTP.get_response(uri)
       JSON.parse res.body if res.is_a?(Net::HTTPSuccess)

@@ -3,18 +3,18 @@
 require 'scryfall/base'
 
 module Scryfall
+  # Contains the methods for interacting with Scryfall's cards API endpoints
   class Cards < Scryfall::Base
-    def self.search(query, page = nil)
-      params = { q: query.encode }
-      params['path'] = '/cards/search'
-      params['page'] = page unless page.nil? || page == 1
+    def self.search(query:, page: 1)
+      params = { path: '/cards/search', q: query.encode }
+      params[:page] = page unless page.nil? || page == 1
       api.get(params)
     end
 
-    def self.named(query, exact = false, set = nil)
-      params = exact ? { exact: query.encode } : { fuzzy: query.encode }
-      params['path'] = '/cards/named'
-      params['set'] = set unless set.nil?
+    def self.named(query:, exact: false, set: nil)
+      params = { path: '/cards/named', fuzzy: query.encode }
+      params[:exact] = params.delete :fuzzy if exact
+      params[:set] = set unless set.nil?
       api.get(params)
     end
 
