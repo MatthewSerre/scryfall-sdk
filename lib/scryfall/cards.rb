@@ -14,4 +14,9 @@ class Scryfall::Cards < Scryfall::Base
         params['set'] = set unless set.nil?
         api.get(params)
     end
+    def self.autocomplete(query)
+        params = { q: query.encode }
+        params['path'] = '/cards/autocomplete'
+        api.get(params)
+    end
 end
