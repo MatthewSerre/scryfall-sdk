@@ -62,6 +62,5 @@ DEPENDENCIES
   byebug
   rspec
   rubocop
-  scryfall-sdk!
   vcr
   webmock
