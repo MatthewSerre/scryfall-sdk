@@ -12,10 +12,4 @@ Gem::Specification.new do |s|
     'https://github.com/MatthewSerre/scryfall-sdk'
   s.license = 'MIT'
   s.required_ruby_version = '>= 2.6.0'
-
-  s.add_development_dependency 'byebug'
-  s.add_development_dependency 'rspec'
-  s.add_development_dependency 'rubocop'
-  s.add_development_dependency 'vcr'
-  s.add_development_dependency 'webmock'
 end

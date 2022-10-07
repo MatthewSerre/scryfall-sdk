@@ -1,0 +1,90 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.scryfall.com/cards/random?path=/cards/random
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.scryfall.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 06 Oct 2022 23:59:30 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Charset, Accept-Language, Authorization, Cache-Control, Content-Language,
+        Content-Type, DNT, Host, If-Modified-Since, Keep-Alive, Origin, Referer, User-Agent,
+        X-Requested-With
+      Access-Control-Max-Age:
+      - '300'
+      X-Robots-Tag:
+      - none
+      X-Scryfall-Card-Image:
+      - https://cards.scryfall.io/large/front/f/4/f45994db-776d-420e-9241-99bf3b71fa59.jpg?1562952975
+      X-Scryfall-Card:
+      - https://scryfall.com/card/p02/68/dakmor-bat?utm_source=api
+      Content-Disposition:
+      - inline
+      Content-Transfer-Encoding:
+      - binary
+      Vary:
+      - Accept,Accept-Encoding
+      Cache-Control:
+      - no-cache
+      Etag:
+      - W/"16c62aa5af0ba8cd96b0c66f5ea3b49c"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sOxKV9bkWknklPZcO3HccolZHc%2Fb%2FkIxKlE1I0VR%2FC5BLCa2xn0lV4fOM3NLBkj2sgyiN4adWNVkWO%2BMAIn3mvacDtyx4Pt0Q1Ywv9xIPVw6qm8J2HWpA6dbkBdAHXlT0iE%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 756259e9cf7f59cd-IAD
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJvYmplY3QiOiJjYXJkIiwiaWQiOiJmNDU5OTRkYi03NzZkLTQyMGUtOTI0MS05OWJmM2I3MWZhNTkiLCJvcmFjbGVfaWQiOiI3MjRkODI0Ny0zM2IxLTQyYmYtYTgyNy03YjY2ZTQ1NTA0YzEiLCJtdWx0aXZlcnNlX2lkcyI6WzY1NTNdLCJ0Y2dwbGF5ZXJfaWQiOjExOSwiY2FyZG1hcmtldF9pZCI6OTgyOCwibmFtZSI6IkRha21vciBCYXQiLCJsYW5nIjoiZW4iLCJyZWxlYXNlZF9hdCI6IjE5OTgtMDYtMjQiLCJ1cmkiOiJodHRwczovL2FwaS5zY3J5ZmFsbC5jb20vY2FyZHMvZjQ1OTk0ZGItNzc2ZC00MjBlLTkyNDEtOTliZjNiNzFmYTU5Iiwic2NyeWZhbGxfdXJpIjoiaHR0cHM6Ly9zY3J5ZmFsbC5jb20vY2FyZC9wMDIvNjgvZGFrbW9yLWJhdD91dG1fc291cmNlPWFwaSIsImxheW91dCI6Im5vcm1hbCIsImhpZ2hyZXNfaW1hZ2UiOnRydWUsImltYWdlX3N0YXR1cyI6ImhpZ2hyZXNfc2NhbiIsImltYWdlX3VyaXMiOnsic21hbGwiOiJodHRwczovL2NhcmRzLnNjcnlmYWxsLmlvL3NtYWxsL2Zyb250L2YvNC9mNDU5OTRkYi03NzZkLTQyMGUtOTI0MS05OWJmM2I3MWZhNTkuanBnPzE1NjI5NTI5NzUiLCJub3JtYWwiOiJodHRwczovL2NhcmRzLnNjcnlmYWxsLmlvL25vcm1hbC9mcm9udC9mLzQvZjQ1OTk0ZGItNzc2ZC00MjBlLTkyNDEtOTliZjNiNzFmYTU5LmpwZz8xNTYyOTUyOTc1IiwibGFyZ2UiOiJodHRwczovL2NhcmRzLnNjcnlmYWxsLmlvL2xhcmdlL2Zyb250L2YvNC9mNDU5OTRkYi03NzZkLTQyMGUtOTI0MS05OWJmM2I3MWZhNTkuanBnPzE1NjI5NTI5NzUiLCJwbmciOiJodHRwczovL2NhcmRzLnNjcnlmYWxsLmlvL3BuZy9mcm9udC9mLzQvZjQ1OTk0ZGItNzc2ZC00MjBlLTkyNDEtOTliZjNiNzFmYTU5LnBuZz8xNTYyOTUyOTc1IiwiYXJ0X2Nyb3AiOiJodHRwczovL2NhcmRzLnNjcnlmYWxsLmlvL2FydF9jcm9wL2Zyb250L2YvNC9mNDU5OTRkYi03NzZkLTQyMGUtOTI0MS05OWJmM2I3MWZhNTkuanBnPzE1NjI5NTI5NzUiLCJib3JkZXJfY3JvcCI6Imh0dHBzOi8vY2FyZHMuc2NyeWZhbGwuaW8vYm9yZGVyX2Nyb3AvZnJvbnQvZi80L2Y0NTk5NGRiLTc3NmQtNDIwZS05MjQxLTk5YmYzYjcxZmE1OS5qcGc/MTU2Mjk1Mjk3NSJ9LCJtYW5hX2Nvc3QiOiJ7MX17Qn0iLCJjbWMiOjIuMCwidHlwZV9saW5lIjoiQ3JlYXR1cmUg4oCUIEJhdCIsIm9yYWNsZV90ZXh0IjoiRmx5aW5nIiwicG93ZXIiOiIxIiwidG91Z2huZXNzIjoiMSIsImNvbG9ycyI6WyJCIl0sImNvbG9yX2lkZW50aXR5IjpbIkIiXSwia2V5d29yZHMiOlsiRmx5aW5nIl0sImxlZ2FsaXRpZXMiOnsic3RhbmRhcmQiOiJub3RfbGVnYWwiLCJmdXR1cmUiOiJub3RfbGVnYWwiLCJoaXN0b3JpYyI6Im5vdF9sZWdhbCIsImdsYWRpYXRvciI6Im5vdF9sZWdhbCIsInBpb25lZXIiOiJub3RfbGVnYWwiLCJleHBsb3JlciI6Im5vdF9sZWdhbCIsIm1vZGVybiI6Im5vdF9sZWdhbCIsImxlZ2FjeSI6ImxlZ2FsIiwicGF1cGVyIjoibGVnYWwiLCJ2aW50YWdlIjoibGVnYWwiLCJwZW5ueSI6Im5vdF9sZWdhbCIsImNvbW1hbmRlciI6ImxlZ2FsIiwiYnJhd2wiOiJub3RfbGVnYWwiLCJoaXN0b3JpY2JyYXdsIjoibm90X2xlZ2FsIiwiYWxjaGVteSI6Im5vdF9sZWdhbCIsInBhdXBlcmNvbW1hbmRlciI6ImxlZ2FsIiwiZHVlbCI6ImxlZ2FsIiwib2xkc2Nob29sIjoibm90X2xlZ2FsIiwicHJlbW9kZXJuIjoibm90X2xlZ2FsIn0sImdhbWVzIjpbInBhcGVyIl0sInJlc2VydmVkIjpmYWxzZSwiZm9pbCI6ZmFsc2UsIm5vbmZvaWwiOnRydWUsImZpbmlzaGVzIjpbIm5vbmZvaWwiXSwib3ZlcnNpemVkIjpmYWxzZSwicHJvbW8iOmZhbHNlLCJyZXByaW50IjpmYWxzZSwidmFyaWF0aW9uIjpmYWxzZSwic2V0X2lkIjoiYWM2N2YxOGEtNGYwZS00MDdlLWJhYjEtYTlmZTRmNjU5NTY1Iiwic2V0IjoicDAyIiwic2V0X25hbWUiOiJQb3J0YWwgU2Vjb25kIEFnZSIsInNldF90eXBlIjoic3RhcnRlciIsInNldF91cmkiOiJodHRwczovL2FwaS5zY3J5ZmFsbC5jb20vc2V0cy9hYzY3ZjE4YS00ZjBlLTQwN2UtYmFiMS1hOWZlNGY2NTk1NjUiLCJzZXRfc2VhcmNoX3VyaSI6Imh0dHBzOi8vYXBpLnNjcnlmYWxsLmNvbS9jYXJkcy9zZWFyY2g/b3JkZXI9c2V0XHUwMDI2cT1lJTNBcDAyXHUwMDI2dW5pcXVlPXByaW50cyIsInNjcnlmYWxsX3NldF91cmkiOiJodHRwczovL3NjcnlmYWxsLmNvbS9zZXRzL3AwMj91dG1fc291cmNlPWFwaSIsInJ1bGluZ3NfdXJpIjoiaHR0cHM6Ly9hcGkuc2NyeWZhbGwuY29tL2NhcmRzL2Y0NTk5NGRiLTc3NmQtNDIwZS05MjQxLTk5YmYzYjcxZmE1OS9ydWxpbmdzIiwicHJpbnRzX3NlYXJjaF91cmkiOiJodHRwczovL2FwaS5zY3J5ZmFsbC5jb20vY2FyZHMvc2VhcmNoP29yZGVyPXJlbGVhc2VkXHUwMDI2cT1vcmFjbGVpZCUzQTcyNGQ4MjQ3LTMzYjEtNDJiZi1hODI3LTdiNjZlNDU1MDRjMVx1MDAyNnVuaXF1ZT1wcmludHMiLCJjb2xsZWN0b3JfbnVtYmVyIjoiNjgiLCJkaWdpdGFsIjpmYWxzZSwicmFyaXR5IjoiY29tbW9uIiwiZmxhdm9yX3RleHQiOiJUaGUgYmF0IHRocml2ZXMgb24gd2hhdCB1bmRlcmVzdGltYXRlcyBpdC4iLCJjYXJkX2JhY2tfaWQiOiIwYWVlYmFmNS04YzdkLTQ2MzYtOWU4Mi04YzI3NDQ3ODYxZjciLCJhcnRpc3QiOiJVbmEgRnJpY2tlciIsImFydGlzdF9pZHMiOlsiMDQ3MWEzNzEtMWJmOC00OWYyLThlNzYtY2JlM2EwYmZhN2U4Il0sImlsbHVzdHJhdGlvbl9pZCI6IjlmODc1NmVhLTg0ODItNDRjOC05YTJhLTljZWU3MGVlYTQ2YiIsImJvcmRlcl9jb2xvciI6ImJsYWNrIiwiZnJhbWUiOiIxOTk3IiwiZnVsbF9hcnQiOmZhbHNlLCJ0ZXh0bGVzcyI6ZmFsc2UsImJvb3N0ZXIiOnRydWUsInN0b3J5X3Nwb3RsaWdodCI6ZmFsc2UsImVkaHJlY19yYW5rIjoyMjMxOCwicHJpY2VzIjp7InVzZCI6IjAuMTMiLCJ1c2RfZm9pbCI6bnVsbCwidXNkX2V0Y2hlZCI6bnVsbCwiZXVyIjoiMC41MCIsImV1cl9mb2lsIjpudWxsLCJ0aXgiOm51bGx9LCJyZWxhdGVkX3VyaXMiOnsiZ2F0aGVyZXIiOiJodHRwczovL2dhdGhlcmVyLndpemFyZHMuY29tL1BhZ2VzL0NhcmQvRGV0YWlscy5hc3B4P211bHRpdmVyc2VpZD02NTUzIiwidGNncGxheWVyX2luZmluaXRlX2FydGljbGVzIjoiaHR0cHM6Ly9pbmZpbml0ZS50Y2dwbGF5ZXIuY29tL3NlYXJjaD9jb250ZW50TW9kZT1hcnRpY2xlXHUwMDI2Z2FtZT1tYWdpY1x1MDAyNnBhcnRuZXI9c2NyeWZhbGxcdTAwMjZxPURha21vcitCYXRcdTAwMjZ1dG1fY2FtcGFpZ249YWZmaWxpYXRlXHUwMDI2dXRtX21lZGl1bT1hcGlcdTAwMjZ1dG1fc291cmNlPXNjcnlmYWxsIiwidGNncGxheWVyX2luZmluaXRlX2RlY2tzIjoiaHR0cHM6Ly9pbmZpbml0ZS50Y2dwbGF5ZXIuY29tL3NlYXJjaD9jb250ZW50TW9kZT1kZWNrXHUwMDI2Z2FtZT1tYWdpY1x1MDAyNnBhcnRuZXI9c2NyeWZhbGxcdTAwMjZxPURha21vcitCYXRcdTAwMjZ1dG1fY2FtcGFpZ249YWZmaWxpYXRlXHUwMDI2dXRtX21lZGl1bT1hcGlcdTAwMjZ1dG1fc291cmNlPXNjcnlmYWxsIiwiZWRocmVjIjoiaHR0cHM6Ly9lZGhyZWMuY29tL3JvdXRlLz9jYz1EYWttb3IrQmF0In0sInB1cmNoYXNlX3VyaXMiOnsidGNncGxheWVyIjoiaHR0cHM6Ly93d3cudGNncGxheWVyLmNvbS9wcm9kdWN0LzExOT9wYWdlPTFcdTAwMjZ1dG1fY2FtcGFpZ249YWZmaWxpYXRlXHUwMDI2dXRtX21lZGl1bT1hcGlcdTAwMjZ1dG1fc291cmNlPXNjcnlmYWxsIiwiY2FyZG1hcmtldCI6Imh0dHBzOi8vd3d3LmNhcmRtYXJrZXQuY29tL2VuL01hZ2ljL1Byb2R1Y3RzL1NlYXJjaD9yZWZlcnJlcj1zY3J5ZmFsbFx1MDAyNnNlYXJjaFN0cmluZz1EYWttb3IrQmF0XHUwMDI2dXRtX2NhbXBhaWduPWNhcmRfcHJpY2VzXHUwMDI2dXRtX21lZGl1bT10ZXh0XHUwMDI2dXRtX3NvdXJjZT1zY3J5ZmFsbCIsImNhcmRob2FyZGVyIjoiaHR0cHM6Ly93d3cuY2FyZGhvYXJkZXIuY29tL2NhcmRzP2FmZmlsaWF0ZV9pZD1zY3J5ZmFsbFx1MDAyNmRhdGElNUJzZWFyY2glNUQ9RGFrbW9yK0JhdFx1MDAyNnJlZj1jYXJkLXByb2ZpbGVcdTAwMjZ1dG1fY2FtcGFpZ249YWZmaWxpYXRlXHUwMDI2dXRtX21lZGl1bT1jYXJkXHUwMDI2dXRtX3NvdXJjZT1zY3J5ZmFsbCJ9fQ==
+  recorded_at: Thu, 06 Oct 2022 23:59:30 GMT
+recorded_with: VCR 6.1.0
