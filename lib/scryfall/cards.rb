@@ -17,5 +17,10 @@ module Scryfall
       params[:set] = set unless set.nil?
       api.get(params)
     end
+
+    def self.random(query: ' ')
+      params = { path: '/cards/random', q: query.encode }
+      api.get(params)
+    end
   end
 end
