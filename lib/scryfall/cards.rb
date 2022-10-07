@@ -18,7 +18,7 @@ module Scryfall
       api.get(params)
     end
 
-    def self.autocomplete(query)
+    def self.autocomplete(query:)
       params = { path: '/cards/autocomplete', q: query.encode }
       api.get(params)
     end
