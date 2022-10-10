@@ -36,5 +36,13 @@ RSpec.describe Scryfall::Cards do
         end
       end
     end
+
+    context 'random' do
+      it 'returns a JSON response containing the data for a filtered random card search' do
+        VCR.use_cassette('successful filtered random search') do
+          expect(Scryfall::Cards.random(query: 'Jace')['object']).to eq('card')
+        end
+      end
+    end
   end
 end
