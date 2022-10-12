@@ -2,4 +2,4 @@ AllCops:
   NewCops: enable
   
 Metrics/BlockLength:
-  Max: 100
+  AllowedMethods: ["describe", "context"]
