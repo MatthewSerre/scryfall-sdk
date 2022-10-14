@@ -28,5 +28,11 @@ module Scryfall
       params = { path: '/cards/autocomplete', q: query.encode }
       api.get(params)
     end
+
+    def self.code_number_lang(code:, number:, lang: nil)
+      params = { path: "/cards/#{code}/#{number}" }
+      params[:path] += "/#{lang}" unless lang.nil?
+      api.get(params)
+    end
   end
 end
