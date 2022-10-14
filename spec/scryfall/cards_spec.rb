@@ -28,20 +28,33 @@ RSpec.describe Scryfall::Cards do
         end
       end
     end
+  end
 
-    context 'random' do
-      it 'returns a JSON response containing the data for a random card' do
-        VCR.use_cassette('successful random search') do
-          expect(Scryfall::Cards.random(query: nil)['object']).to eq('card')
-        end
+  context 'random' do
+    it 'returns a JSON response containing the data for a random card' do
+      VCR.use_cassette('successful random search') do
+        expect(Scryfall::Cards.random(query: nil)['object']).to eq('card')
       end
     end
 
-    context 'random' do
-      it 'returns a JSON response containing the data for a filtered random card search' do
-        VCR.use_cassette('successful filtered random search') do
-          expect(Scryfall::Cards.random(query: 'Jace')['name']).to start_with 'Jace'
-        end
+    it 'returns a JSON response containing the data for a filtered random card search' do
+      VCR.use_cassette('successful filtered random search') do
+        expect(Scryfall::Cards.random(query: 'Jace')['name']).to start_with 'Jace'
+      end
+    end
+  end
+
+  context 'code_number_lang' do
+    it 'returns a JSON response containing a single card in English' do
+      VCR.use_cassette('successful code number lang english') do
+        expect(Scryfall::Cards.code_number_lang(code: 'xln', number: 96)['name']).to eq('Costly Plunder')
+      end
+    end
+
+    it 'returns a JSON response containing a single card in Italian' do
+      VCR.use_cassette('successful code number lang italian') do
+        expect(Scryfall::Cards.code_number_lang(code: 'xln', number: 96, lang: 'it')['printed_name'])
+          .to eq('Saccheggio a Caro Prezzo')
       end
     end
   end

@@ -23,5 +23,11 @@ module Scryfall
       params[:q] = query.encode unless query.nil?
       api.get(params)
     end
+
+    def self.code_number_lang(code:, number:, lang: nil)
+      params = { path: "/cards/#{code}/#{number}" }
+      params[:path] += "/#{lang}" unless lang.nil?
+      api.get(params)
+    end
   end
 end
