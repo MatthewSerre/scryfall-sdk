@@ -18,6 +18,12 @@ module Scryfall
       api.get(params)
     end
 
+    def self.random(query: nil)
+      params = { path: '/cards/random' }
+      params[:q] = query.encode unless query.nil?
+      api.get(params)
+    end
+
     def self.autocomplete(query:)
       params = { path: '/cards/autocomplete', q: query.encode }
       api.get(params)

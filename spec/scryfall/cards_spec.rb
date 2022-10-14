@@ -28,6 +28,22 @@ RSpec.describe Scryfall::Cards do
       end
     end
 
+    context 'random' do
+      it 'returns a JSON response containing the data for a random card' do
+        VCR.use_cassette('successful random search') do
+          expect(Scryfall::Cards.random(query: nil)['object']).to eq('card')
+        end
+      end
+    end
+
+    context 'random' do
+      it 'returns a JSON response containing the data for a filtered random card search' do
+        VCR.use_cassette('successful filtered random search') do
+          expect(Scryfall::Cards.random(query: 'Jace')['name']).to start_with 'Jace'
+        end
+      end
+    end
+
     context 'autocomplete' do
       it 'returns a JSON response containing data that could be autocompletions of given string' do
         VCR.use_cassette('successful autocomplete') do
