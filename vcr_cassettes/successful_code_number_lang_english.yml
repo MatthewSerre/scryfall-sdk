@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.scryfall.com/cards/xln/96?path=/cards/xln/96
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.scryfall.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 14 Oct 2022 01:20:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS
+      Access-Control-Allow-Headers:
+      - Accept, Accept-Charset, Accept-Language, Authorization, Cache-Control, Content-Language,
+        Content-Type, DNT, Host, If-Modified-Since, Keep-Alive, Origin, Referer, User-Agent,
+        X-Requested-With
+      Access-Control-Max-Age:
+      - '300'
+      X-Robots-Tag:
+      - none
+      Cache-Control:
+      - public, max-age=28800
+      X-Action-Cache:
+      - HIT
+      X-Scryfall-Card-Image:
+      - https://cards.scryfall.io/large/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.jpg?1562563557
+      X-Scryfall-Card:
+      - https://scryfall.com/card/xln/96/costly-plunder?utm_source=api
+      Content-Disposition:
+      - inline
+      Content-Transfer-Encoding:
+      - binary
+      Vary:
+      - Accept,Accept-Encoding
+      Etag:
+      - W/"4c7d62c51cb4dbe08b089b9ad97c4ccf"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '355'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=9dnP54vng9Mr8uLJbXDIFTN0af2U%2FzWiTbY5e9bqTgJJgY2FwQrpkW%2BVZWQo%2FcoWKf%2Bauh8s14BYV0EQ%2FkxdV8qAFZTbpOmfN423dVIrQAzbZA6mMeERh49sBI9YTdWyWNo%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 759c7e93c9436fa1-IAD
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"object":"card","id":"c3f1f41e-98fc-4f6b-b287-c8899dff8ab0","oracle_id":"8cdfd9df-4783-4138-a286-828a97f516aa","multiverse_ids":[435250],"mtgo_id":65208,"mtgo_foil_id":65209,"arena_id":66157,"tcgplayer_id":145780,"cardmarket_id":301775,"name":"Costly
+        Plunder","lang":"en","released_at":"2017-09-29","uri":"https://api.scryfall.com/cards/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0","scryfall_uri":"https://scryfall.com/card/xln/96/costly-plunder?utm_source=api","layout":"normal","highres_image":true,"image_status":"highres_scan","image_uris":{"small":"https://cards.scryfall.io/small/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.jpg?1562563557","normal":"https://cards.scryfall.io/normal/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.jpg?1562563557","large":"https://cards.scryfall.io/large/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.jpg?1562563557","png":"https://cards.scryfall.io/png/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.png?1562563557","art_crop":"https://cards.scryfall.io/art_crop/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.jpg?1562563557","border_crop":"https://cards.scryfall.io/border_crop/front/c/3/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0.jpg?1562563557"},"mana_cost":"{1}{B}","cmc":2.0,"type_line":"Instant","oracle_text":"As
+        an additional cost to cast this spell, sacrifice an artifact or creature.\nDraw
+        two cards.","colors":["B"],"color_identity":["B"],"keywords":[],"legalities":{"standard":"not_legal","future":"not_legal","historic":"legal","gladiator":"legal","pioneer":"legal","explorer":"legal","modern":"legal","legacy":"legal","pauper":"legal","vintage":"legal","penny":"legal","commander":"legal","brawl":"not_legal","historicbrawl":"legal","alchemy":"not_legal","paupercommander":"legal","duel":"legal","oldschool":"not_legal","premodern":"not_legal"},"games":["arena","paper","mtgo"],"reserved":false,"foil":true,"nonfoil":true,"finishes":["nonfoil","foil"],"oversized":false,"promo":false,"reprint":false,"variation":false,"set_id":"fe0dad85-54bc-4151-9200-d68da84dd0f2","set":"xln","set_name":"Ixalan","set_type":"expansion","set_uri":"https://api.scryfall.com/sets/fe0dad85-54bc-4151-9200-d68da84dd0f2","set_search_uri":"https://api.scryfall.com/cards/search?order=set\u0026q=e%3Axln\u0026unique=prints","scryfall_set_uri":"https://scryfall.com/sets/xln?utm_source=api","rulings_uri":"https://api.scryfall.com/cards/c3f1f41e-98fc-4f6b-b287-c8899dff8ab0/rulings","prints_search_uri":"https://api.scryfall.com/cards/search?order=released\u0026q=oracleid%3A8cdfd9df-4783-4138-a286-828a97f516aa\u0026unique=prints","collector_number":"96","digital":false,"rarity":"common","flavor_text":"No
+        lock of iron is a match for Vraska''s will of stone.","card_back_id":"0aeebaf5-8c7d-4636-9e82-8c27447861f7","artist":"Ben
+        Maier","artist_ids":["7bc582c5-4733-4022-8cef-844b800be9f7"],"illustration_id":"59de31d0-ddf1-495d-8a20-dce841f2c6c1","border_color":"black","frame":"2015","full_art":false,"textless":false,"booster":true,"story_spotlight":false,"edhrec_rank":1660,"penny_rank":3194,"prices":{"usd":"0.17","usd_foil":"0.63","usd_etched":null,"eur":"0.13","eur_foil":"0.05","tix":"0.03"},"related_uris":{"gatherer":"https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=435250","tcgplayer_infinite_articles":"https://infinite.tcgplayer.com/search?contentMode=article\u0026game=magic\u0026partner=scryfall\u0026q=Costly+Plunder\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall","tcgplayer_infinite_decks":"https://infinite.tcgplayer.com/search?contentMode=deck\u0026game=magic\u0026partner=scryfall\u0026q=Costly+Plunder\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall","edhrec":"https://edhrec.com/route/?cc=Costly+Plunder"},"purchase_uris":{"tcgplayer":"https://www.tcgplayer.com/product/145780?page=1\u0026utm_campaign=affiliate\u0026utm_medium=api\u0026utm_source=scryfall","cardmarket":"https://www.cardmarket.com/en/Magic/Products/Search?referrer=scryfall\u0026searchString=Costly+Plunder\u0026utm_campaign=card_prices\u0026utm_medium=text\u0026utm_source=scryfall","cardhoarder":"https://www.cardhoarder.com/cards/65208?affiliate_id=scryfall\u0026ref=card-profile\u0026utm_campaign=affiliate\u0026utm_medium=card\u0026utm_source=scryfall"}}'
+  recorded_at: Fri, 14 Oct 2022 01:20:46 GMT
+recorded_with: VCR 6.1.0
